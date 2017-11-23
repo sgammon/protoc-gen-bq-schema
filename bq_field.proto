@@ -13,7 +13,6 @@
 // limitations under the License.
 
 syntax = "proto3";
-
 package gen_bq_schema;
 
 option go_package = "protos";
@@ -39,4 +38,9 @@ extend google.protobuf.FieldOptions {
   //
   // TODO: register with protobuf-global-extension-registry@google.com
   bool ignore = 1024;
+
+  // Set the description for a field in BigQuery schema.
+  //
+  // TODO: register with protobuf-global-extension-registry@google.com
+  string description = 1025;
 }
